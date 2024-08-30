@@ -9,7 +9,7 @@ Additionally, the package provides several operators that act on DDF states.
 The functions defined in the DDF package are derived from the papers [1, 2] and adjusted to the Feingold-Frenkel algebra F.
 
 1. R.W. Gebert and H. Nicolai, On E(10) and the DDF construction, Commun. Math. Phys. 172 (1995), 571-622, [arXiv:hep-th/9406175](https://arxiv.org/abs/hep-th/9406175).
-2. R.W. Gebert and H. Nicolai, An Affine string vertex operator construction at arbitrary level, J. Math. Phys. 38 (1997), 4435-4450, [arXiv:hep-th/9608014]{https://arxiv.org/abs/hep-th/9608014}.
+2. R.W. Gebert and H. Nicolai, An Affine string vertex operator construction at arbitrary level, J. Math. Phys. 38 (1997), 4435-4450, [arXiv:hep-th/9608014](https://arxiv.org/abs/hep-th/9608014).
 
 ## Getting Started
 
