@@ -1,0 +1,1 @@
+(2*Sqrt[2]*tp[prod[{d[-2]}], exp[-6*d - 5*r - 2*s]])/5 + tp[prod[{s[-2]}], exp[-6*d - 5*r - 2*s]]/Sqrt[2] - (4*Sqrt[2]*tp[prod[{d[-1], d[-1]}], exp[-6*d - 5*r - 2*s]])/25 - (Sqrt[2]*tp[prod[{d[-1], s[-1]}], exp[-6*d - 5*r - 2*s]])/5

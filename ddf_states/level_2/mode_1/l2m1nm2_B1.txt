@@ -1,0 +1,1 @@
+4*tp[prod[{d[-1]}], exp[-4*d - 2*r - 2*s]] + 2*tp[prod[{r[-1]}], exp[-4*d - 2*r - 2*s]] + 2*tp[prod[{s[-1]}], exp[-4*d - 2*r - 2*s]]

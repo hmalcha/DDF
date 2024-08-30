@@ -1,0 +1,5 @@
+#!/usr/bin/env wolframscript
+(* ::Package::{808,676}::{{532,Automatic},{Automatic,108}}:: *)
+
+(* ::Input::Initialization:: *)
+rootSchurEval[6,r_]:=1/6 prod[{applyList[toList[r],-6]}]+1/5 prod[{applyList[toList[r],-5],applyList[toList[r],-1]}]+1/8 prod[{applyList[toList[r],-4],applyList[toList[r],-2]}]+1/18 prod[{applyList[toList[r],-3],applyList[toList[r],-3]}]+1/8 prod[{applyList[toList[r],-4],applyList[toList[r],-1],applyList[toList[r],-1]}]+1/6 prod[{applyList[toList[r],-3],applyList[toList[r],-2],applyList[toList[r],-1]}]+1/48 prod[{applyList[toList[r],-2],applyList[toList[r],-2],applyList[toList[r],-2]}]+1/18 prod[{applyList[toList[r],-3],applyList[toList[r],-1],applyList[toList[r],-1],applyList[toList[r],-1]}]+1/16 prod[{applyList[toList[r],-2],applyList[toList[r],-2],applyList[toList[r],-1],applyList[toList[r],-1]}]+1/48 prod[{applyList[toList[r],-2],applyList[toList[r],-1],applyList[toList[r],-1],applyList[toList[r],-1],applyList[toList[r],-1]}]+1/720 prod[{applyList[toList[r],-1],applyList[toList[r],-1],applyList[toList[r],-1],applyList[toList[r],-1],applyList[toList[r],-1],applyList[toList[r],-1]}]

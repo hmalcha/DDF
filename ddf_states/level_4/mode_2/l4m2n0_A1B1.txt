@@ -1,0 +1,1 @@
+-(tp[prod[{s[-2]}], exp[(-17*d)/4 - 4*r]]/Sqrt[2]) + tp[prod[{d[-1], s[-1]}], exp[(-17*d)/4 - 4*r]]/(4*Sqrt[2]) + 2*Sqrt[2]*tp[prod[{d[-1], s[-1]}], exp[(-17*d)/4 - 4*r]] + 2*Sqrt[2]*tp[prod[{r[-1], s[-1]}], exp[(-17*d)/4 - 4*r]]

@@ -1,0 +1,5 @@
+#!/usr/bin/env wolframscript
+(* ::Package::{808,911}::{{20,Automatic},{Automatic,Automatic}}:: *)
+
+(* ::Input::Initialization:: *)
+affineSchurEval[8,level_,sgn_]:=(sgn auxA[level,-8])/(4 Sqrt[2])+1/16 auxA[level,-4]^2+2/15 auxA[level,-5] auxA[level,-3]+1/6 auxA[level,-6] auxA[level,-2]+(sgn auxA[level,-3]^2 auxA[level,-2])/(9 Sqrt[2])+(sgn auxA[level,-4] auxA[level,-2]^2)/(8 Sqrt[2])+1/96 auxA[level,-2]^4+2/7 auxA[level,-7] auxA[level,-1]+(sgn auxA[level,-4] auxA[level,-3] auxA[level,-1])/(3 Sqrt[2])+1/5 Sqrt[2] sgn auxA[level,-5] auxA[level,-2] auxA[level,-1]+1/6 auxA[level,-3] auxA[level,-2]^2 auxA[level,-1]+(sgn auxA[level,-6] auxA[level,-1]^2)/(3 Sqrt[2])+1/9 auxA[level,-3]^2 auxA[level,-1]^2+1/4 auxA[level,-4] auxA[level,-2] auxA[level,-1]^2+(sgn auxA[level,-2]^3 auxA[level,-1]^2)/(12 Sqrt[2])+2/15 auxA[level,-5] auxA[level,-1]^3+1/9 Sqrt[2] sgn auxA[level,-3] auxA[level,-2] auxA[level,-1]^3+(sgn auxA[level,-4] auxA[level,-1]^4)/(12 Sqrt[2])+1/24 auxA[level,-2]^2 auxA[level,-1]^4+1/45 auxA[level,-3] auxA[level,-1]^5+(sgn auxA[level,-2] auxA[level,-1]^6)/(90 Sqrt[2])+auxA[level,-1]^8/2520

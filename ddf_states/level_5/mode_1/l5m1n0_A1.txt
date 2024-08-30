@@ -1,0 +1,1 @@
+tp[prod[{s[-1]}], exp[-5*d - 5*r]]/Sqrt[2]
