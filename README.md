@@ -15,7 +15,9 @@ The functions defined in the DDF package are derived from the papers [1, 2] and 
 
 To get started clone this repository to your local machine.
 
-`git clone https://github.com/hmalcha/DDF.git ddf`
+```
+git clone https://github.com/hmalcha/DDF.git ddf
+```
 
 Alternatively, you can download the contents of this repository by clicking on **Code** and then **Download Zip** in the top right corner.
 
@@ -27,7 +29,9 @@ For the DDF package consist of the package file ***ddf.wl*** and the two folders
 
 To load the package into a Mathematica notebook write:
 
-`Get["ddf.wl"]`
+```
+Get["ddf.wl"]
+```
 
 ## Compute new DDF States
 
@@ -35,9 +39,11 @@ Besides the two folders, the user guide and the package file there is one more f
 
 Because the file is a *.wls* file it requires *wolframscript* to be installed and must be called from the command line via
 
-`wolframscript -file compute_ddf_states.wls LEVEL WEIGHT`
+```
+wolframscript -file compute_ddf_states.wls [LEVEL] [WEIGHT]
+```
 
-The placeholders LEVEL and WEIGHT must be replaced by two integers.
+The placeholders [LEVEL] and [WEIGHT] must be replaced by two integers.
 
 The *.wls* script then computes all DDF states of the given level and weight up to mode sum 7.
 
