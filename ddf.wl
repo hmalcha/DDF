@@ -1,4 +1,4 @@
-(* ::Package::{2560,1316}::{{0,Automatic},{Automatic,0}}:: *)
+(* ::Package:: *)
 
 (* ::Title:: *)
 (*DDF Construction of F*)
@@ -614,13 +614,11 @@ StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\).";
 sugawaraOp::usage="\!\(\*
 StyleBox[\"sugwaraOp\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"linCombo_ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the action of the level l, mode m Sugawara operator on a linear combination of \!\(\*
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the action of the mode m Sugawara operator on a linear combination of \!\(\*
 StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) (or a tachyon \!\(\*
 StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -633,8 +631,6 @@ StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\).";
 affineE::usage="\!\(\*
 StyleBox[\"affineE\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -642,10 +638,6 @@ StyleBox[\"linCombo_ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\) or \!\(\*
 StyleBox[\"affineE\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -653,7 +645,7 @@ StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the action of the level l, mode m affine generator E on a linear combination of \!\(\*
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the action of the mode m affine generator E on a linear combination of \!\(\*
 StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) (or a tachyon \!\(\*
 StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -670,8 +662,6 @@ StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\) depending on the input" ;
 affineF::usage="\!\(\*
 StyleBox[\"affineF\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -679,10 +669,6 @@ StyleBox[\"linCombo_ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\) or \!\(\*
 StyleBox[\"affineF\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -690,7 +676,7 @@ StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the action of the level l, mode m affine generator F on a linear combination of \!\(\*
+StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the action of the mode m affine generator F on a linear combination of \!\(\*
 StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) (or a tachyon \!\(\*
 StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -707,8 +693,6 @@ StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\) depending on the input" ;
 affineH::usage="\!\(\*
 StyleBox[\"affineH\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -716,10 +700,6 @@ StyleBox[\"linCombo_ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\) or \!\(\*
 StyleBox[\"affineH\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -728,7 +708,7 @@ StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)computes the action of the level l, mode m affine generator H on a linear combination of \!\(\*
+StyleBox[\" \",\nFontWeight->\"Bold\"]\)computes the action of the mode m affine generator H on a linear combination of \!\(\*
 StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) (or a tachyon \!\(\*
 StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -775,43 +755,9 @@ StyleBox[\"tp\",\nFontWeight->\"Bold\"]\).";
 
 
 (* ::Input::Initialization:: *)
-cosetVirasoroOp::usage="\!\(\*
-StyleBox[\"cosetVirasoroOp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"level_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"level_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"expr_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"expr_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the action of the coset Virasoro operator on the state \[Psi] = [expr_1, expr_2], where the two expressions are linear combinations of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) of \!\(\*
-StyleBox[\"level_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\) and \!\(\*
-StyleBox[\"level_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\) respecitvely. Returns a linear combination of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\). Caution: The states of F do not form a reprsentation of the coset Virasoro algebra. In particular the \!\(\*
-StyleBox[\"cosetVirasoroOp\",\nFontWeight->\"Bold\"]\) maps some states from outside of F into F. Moreover, at level 3 and higher the eigenvalue equation for eigenstates which are not pure commutators of ground states does not work.";
-
-
-(* ::Input::Initialization:: *)
 cosetVirasoroOpTp::usage="\!\(\*
 StyleBox[\"cosetVirasoroOpTp\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"level_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"level_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -833,11 +779,7 @@ StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"expr_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"2\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\), where the two expressions are linear combinations of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) of \!\(\*
-StyleBox[\"level_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\) and \!\(\*
-StyleBox[\"level_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\) respecitvely. Returns a linear combination of \!\(\*
+StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\). Returns a linear combination of \!\(\*
 StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\). The tensor product of DDF states does form a representation of the coset Virasoro algebra.";
 
 
@@ -845,12 +787,6 @@ StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\). The tensor product of DDF states d
 sugawaraOpTp::usage="\!\(\*
 StyleBox[\"sugawaraOpTp\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"level_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"level_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
@@ -863,11 +799,7 @@ StyleBox[\"expr_\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"2\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
 StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the action of the Sugawara operator on the tensor product ddfTp[expr_1, expr_2], where the two expressions are linear combinations of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) of \!\(\*
-StyleBox[\"level_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\) and \!\(\*
-StyleBox[\"level_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\) respecitvely. Returns a linear combination of \!\(\*
+StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\). Returns a linear combination of \!\(\*
 StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\).";
 
 
@@ -1434,6 +1366,35 @@ ddfProdInvestigator[exp[t_]]:={sp[d,Expand[t]],0,1/2sp[s,Expand[t]]}
 
 
 (* ::Section:: *)
+(*DDF Tensor Product Investigator*)
+
+
+(* ::Text:: *)
+(*Define a function ddfTpInvestigator that grabs the level, mode sum and weight for both factors in a linear combination of ddfTp and writes them in a list.*)
+
+
+(* ::Text:: *)
+(*ddfTpInvestigator assumes that all ddfTp in a sum have the same properties.*)
+(*Hence it only picks one term from a linear combination of ddfProd.*)
+
+
+(* ::Input::Initialization:: *)
+ddfTpInvestigator[Plus[a_,b_]]:=ddfTpInvestigator[a]
+
+
+(* ::Input::Initialization:: *)
+ddfTpInvestigator[Times[a_, Plus[b_,c_]]]:=ddfTpInvestigator[a*c]
+
+
+(* ::Input::Initialization:: *)
+ddfTpInvestigator[n_*ddfTp[a_,b_]]:={ddfProdInvestigator[a],ddfProdInvestigator[b]}
+
+
+(* ::Input::Initialization:: *)
+ddfTpInvestigator[ddfTp[a_,b_]]:={ddfProdInvestigator[a],ddfProdInvestigator[b]}
+
+
+(* ::Section:: *)
 (*Linear Independence Check and Rank*)
 
 
@@ -1461,10 +1422,10 @@ linearIndependenQ[ls_]:=Block[{},If[rank[ls]==Length[ls],True,False]]
 (* ::Input::Initialization:: *)
 vertexOp[u_[n_]]:=Module[{l},\!\(
 \*UnderoverscriptBox[\(\[Sum]\), \(l = 0\), \(\[Infinity]\)]\(\((\((
-\*SuperscriptBox[\((\(-1\))\), \(n - 1\)]\  \(\((l - n - 1)\)!\))\)\  op1[u[l]]\  
-\*SuperscriptBox[\(z\), \(\(-l\) + n\)])\)/\((\(l!\)\  \(\((\(-n\) - 1)\)!\))\)\)\)+\!\(
-\*UnderoverscriptBox[\(\[Sum]\), \(l = 0\), \(\[Infinity]\)]\(\((\(\((l - n - 1)\)!\)\  op1[u[\(-l\) + n]]\  
-\*SuperscriptBox[\(z\), \(l\)])\)/\((\(l!\)\  \(\((\(-n\) - 1)\)!\))\)\)\)]
+\*SuperscriptBox[\((\(-1\))\), \(n - 1\)]\ \(\((l - n - 1)\)!\))\)\ op1[u[l]]\ 
+\*SuperscriptBox[\(z\), \(\(-l\) + n\)])\)/\((\(l!\)\ \(\((\(-n\) - 1)\)!\))\)\)\)+\!\(
+\*UnderoverscriptBox[\(\[Sum]\), \(l = 0\), \(\[Infinity]\)]\(\((\(\((l - n - 1)\)!\)\ op1[u[\(-l\) + n]]\ 
+\*SuperscriptBox[\(z\), \(l\)])\)/\((\(l!\)\ \(\((\(-n\) - 1)\)!\))\)\)\)]
 
 
 (* ::Text:: *)
@@ -2603,7 +2564,7 @@ toTp::nnarg= "Warning the DDF state has not been pre-computed. Switching to manu
 
 (* ::Input::Initialization:: *)
 toDDF[expr_]:=Block[{level=tpInvestigator[expr][[1]],mode=tpInvestigator[expr][[2]],weight=tpInvestigator[expr][[3]]},
-If[expr==0,Return[0]];
+If[expr==0,Return[0,Block]];
 If[level==1,Message[toDDF::lvl];
 expr,
 fileNames=fileNamesList[level,mode,weight];
@@ -2675,15 +2636,15 @@ normalOrdering[ddfProdHold[{A[level_,a_],A[level_,b_]}]]:=If[a>b,ddfProdHold[{A[
 
 
 (* ::Input::Initialization:: *)
-normalOrdering[affineOps[auxH[level1_,level2_,a_],auxH[level1_,level2_,b_]]]:=If[a>b,affineOps[auxH[level1,level2,b],auxH[level1,level2,a]],affineOps[auxH[level1,level2,a],auxH[level1,level2,b]]]
+normalOrdering[affineOps[auxH[a_],auxH[b_]]]:=If[a>b,affineOps[auxH[b],auxH[a]],affineOps[auxH[a],auxH[b]]]
 
 
 (* ::Input::Initialization:: *)
-normalOrdering[affineOps[auxE[level1_,level2_,a_],auxF[level1_,level2_,b_]]]:=If[a>b,affineOps[auxF[level1,level2,b],auxE[level1,level2,a]],affineOps[auxE[level1,level2,a],auxF[level1,level2,b]]]
+normalOrdering[affineOps[auxE[a_],auxF[b_]]]:=If[a>b,affineOps[auxF[b],auxE[a]],affineOps[auxE[a],auxF[b]]]
 
 
 (* ::Input::Initialization:: *)
-normalOrdering[affineOps[auxF[level1_,level2_,a_],auxE[level1_,level2_,b_]]]:=If[a>b,affineOps[auxE[level1,level2,b],auxF[level1,level2,a]],affineOps[auxF[level1,level2,a],auxE[level1,level2,b]]]
+normalOrdering[affineOps[auxF[a_],auxE[b_]]]:=If[a>b,affineOps[auxE[b],auxF[a]],affineOps[auxF[a],auxE[b]]]
 
 
 (* ::Text:: *)
@@ -2699,15 +2660,15 @@ cutoff[ddfProdHold[{A[level_,a_],A[level_,b_]}],depth_]:=If[b>depth,0,ddfProdHol
 
 
 (* ::Input::Initialization:: *)
-cutoff[affineOps[auxH[level1_,level2_,a_],auxH[level1_,level2_,b_]],depth1_,depth2_]:=If[And[b>depth1,b>depth2] ,0,affineOps[auxH[level1,level2,a],auxH[level1,level2,b]]]
+cutoff[affineOps[auxH[a_],auxH[b_]],depth1_,depth2_]:=If[And[b>depth1,b>depth2] ,0,affineOps[auxH[a],auxH[b]]]
 
 
 (* ::Input::Initialization:: *)
-cutoff[affineOps[auxE[level1_,level2_,a_],auxF[level1_,level2_,b_]],depth1_,depth2_]:=If[And[b>depth1,b>depth2] ,0,affineOps[auxE[level1,level2,a],auxF[level1,level2,b]]]
+cutoff[affineOps[auxE[a_],auxF[b_]],depth1_,depth2_]:=If[And[b>depth1,b>depth2] ,0,affineOps[auxE[a],auxF[b]]]
 
 
 (* ::Input::Initialization:: *)
-cutoff[affineOps[auxF[level1_,level2_,a_],auxE[level1_,level2_,b_]],depth1_,depth2_]:=If[And[b>depth1,b>depth2] ,0,affineOps[auxF[level1,level2,a],auxE[level1,level2,b]]]
+cutoff[affineOps[auxF[a_],auxE[b_]],depth1_,depth2_]:=If[And[b>depth1,b>depth2] ,0,affineOps[auxF[a],auxE[b]]]
 
 
 (* ::Section:: *)
@@ -2857,7 +2818,8 @@ sugawaraSchurEval::nnarg= "The Schur polynomial necessary for this calculation h
 
 
 (* ::Input::Initialization:: *)
-sugawaraOp[level_,m_]:=Function[sugawaraOpAction[level,m,Expand[#]]]
+sugawaraOp[m_]:=Function[Block[{expr=Expand[#]},If[expr==0,Return[0,Block]];
+Block[{ddfProperties=ddfProdInvestigator[expr]},sugawaraOpAction[ddfProperties[[1]],ddfProperties[[2]],m,expr]]]]
 
 
 (* ::Section:: *)
@@ -2874,19 +2836,19 @@ sugawaraOp[level_,m_]:=Function[sugawaraOpAction[level,m,Expand[#]]]
 
 
 (* ::Input::Initialization:: *)
-sugawaraOpAction[level_,m_,Plus[state1_,state2_]]:=sugawaraOpAction[level,m,state1]+sugawaraOpAction[level,m,state2]
+sugawaraOpAction[args__,m_,Plus[state1_,state2_]]:=sugawaraOpAction[args,m,state1]+sugawaraOpAction[args,m,state2]
 
 
 (* ::Input::Initialization:: *)
-sugawaraOpAction[level_,m_,n_*ddfProd[ddf_,tachyon_]]:=n*sugawaraOpAction[level,m,ddfProd[ddf,tachyon]]
+sugawaraOpAction[args__,m_,n_*ddfProd[ddf_,tachyon_]]:=n*sugawaraOpAction[args,m,ddfProd[ddf,tachyon]]
 
 
 (* ::Input::Initialization:: *)
-sugawaraOpAction[level_,m_,eps[a_,b_]*state_]:=eps[a,b]*sugawaraOpAction[level,m,state]
+sugawaraOpAction[args__,m_,eps[a_,b_]*state_]:=eps[a,b]*sugawaraOpAction[args,m,state]
 
 
 (* ::Input::Initialization:: *)
-sugawaraOpAction[level_,m_,0]:=0
+sugawaraOpAction[args__,m_,0]:=0
 
 
 (* ::Text:: *)
@@ -2894,11 +2856,11 @@ sugawaraOpAction[level_,m_,0]:=0
 
 
 (* ::Input::Initialization:: *)
-sugawaraOpAction[level_,m_,exp[tachyon_]]:=sugawaraOpAction[level,m,ddfProd[{},exp[tachyon]]]
+sugawaraOpAction[args__,m_,exp[tachyon_]]:=sugawaraOpAction[args,m,ddfProd[{},exp[tachyon]]]
 
 
 (* ::Input::Initialization:: *)
-sugawaraOpAction[level_,m_,n_*exp[tachyon_]]:=n*sugawaraOpAction[level,m,ddfProd[{},exp[tachyon]]]
+sugawaraOpAction[args__,m_,n_*exp[tachyon_]]:=n*sugawaraOpAction[args,m,ddfProd[{},exp[tachyon]]]
 
 
 (* ::Text:: *)
@@ -2906,7 +2868,7 @@ sugawaraOpAction[level_,m_,n_*exp[tachyon_]]:=n*sugawaraOpAction[level,m,ddfProd
 
 
 (* ::Input::Initialization:: *)
-sugawaraOpAction[level_,m_,ddfProd[ddf_,tachyon_]]:=Block[{modeSum=modeNoAdder[ddfProd[ddf,tachyon]]},firstTerm[level,m,modeSum,ddfProd[ddf,tachyon]]+secondTerm[level,m,modeSum,ddfProd[ddf,tachyon]]+thirdTerm[level,m,modeSum,tachyon,ddfProd[ddf,tachyon]]+fourthTerm[level,m,modeSum,tachyon,ddfProd[ddf,tachyon]]]
+sugawaraOpAction[level_,modeSum_,m_,ddfProd[ddf_,tachyon_]]:=firstTerm[level,m,modeSum,ddfProd[ddf,tachyon]]+secondTerm[level,m,modeSum,ddfProd[ddf,tachyon]]+thirdTerm[level,m,modeSum,tachyon,ddfProd[ddf,tachyon]]+fourthTerm[level,m,modeSum,tachyon,ddfProd[ddf,tachyon]]
 
 
 (* ::Text:: *)
@@ -2973,7 +2935,12 @@ sumResExp[level_, m_, mode_, sgn_, exp[state_]] :=  -(Sum[(unitRoot[level, p]^(-
 
 
 (* ::Input::Initialization:: *)
-sugawaraOpTp[level1_,level2_,m_]:=Function[sugawaraOpTpAction[level1,level2,m,Expand[#]]]
+sugawaraOpTp[m_]:=Function[Block[{expr=Expand[#]},sugawaraOpTpAction[m,expr]]]
+
+
+(* ::Text:: *)
+(*The ddfTp Properties is a list with with two sublists, one for each of the tp factors.*)
+(*The entries in the sublists are level, modeSum and weight of the DDF states*)
 
 
 (* ::Section:: *)
@@ -2989,19 +2956,19 @@ sugawaraOpTp[level1_,level2_,m_]:=Function[sugawaraOpTpAction[level1,level2,m,Ex
 
 
 (* ::Input::Initialization:: *)
-sugawaraOpTpAction[level1_,level2_,m_,0]:=0
+sugawaraOpTpAction[m_,0]:=0
 
 
 (* ::Input::Initialization:: *)
-sugawaraOpTpAction[level1_,level2_,m_,Plus[state1_,state2_]]:=sugawaraOpTpAction[level1,level2,m,state1]+sugawaraOpTpAction[level1,level2,m,state2]
+sugawaraOpTpAction[m_,Plus[state1_,state2_]]:=sugawaraOpTpAction[m,state1]+sugawaraOpTpAction[m,state2]
 
 
 (* ::Input::Initialization:: *)
-sugawaraOpTpAction[level1_,level2_,m_,num_*ddfTp[ddf1_,ddf2_]]:=num*sugawaraOpTpAction[level1,level2,m,ddfTp[ddf1,ddf2]]
+sugawaraOpTpAction[m_,num_*ddfTp[ddf1_,ddf2_]]:=num*sugawaraOpTpAction[m,ddfTp[ddf1,ddf2]]
 
 
 (* ::Input::Initialization:: *)
-sugawaraOpTpAction[level1_,level2_,m_,eps[a_,b_]*state_]:=eps[a,b]*sugawaraOpTpAction[level1,level2,m,state]
+sugawaraOpTpAction[m_,eps[a_,b_]*state_]:=eps[a,b]*sugawaraOpTpAction[m,state]
 
 
 (* ::Text:: *)
@@ -3009,7 +2976,16 @@ sugawaraOpTpAction[level1_,level2_,m_,eps[a_,b_]*state_]:=eps[a,b]*sugawaraOpTpA
 
 
 (* ::Input::Initialization:: *)
-sugawaraOpTpAction[level1_,level2_,m_,ddfTp[ddf1_,ddf2_]]:=Block[{depth1=level1+(ddfProdInvestigator[ddf1][[3]]^2-1+ddfProdInvestigator[ddf1][[2]])/level1,depth2=level2+(ddfProdInvestigator[ddf2][[3]]^2-1+ddfProdInvestigator[ddf2][[2]])/level2},1/(4*(level1+level2+2)) affineAction[Sum[cutoff[normalOrdering[affineOps[auxH[level1,level2,k],auxH[level1,level2,m-k]]],depth1,depth2],{k,-Infinity,Infinity}],ddfTp[ddf1,ddf2]]+1/(2*(level1+level2+2)) affineAction[Sum[cutoff[normalOrdering[affineOps[auxE[level1,level2,k],auxF[level1,level2,m-k]]],depth1,depth2],{k,-Infinity,Infinity}],ddfTp[ddf1,ddf2]]+1/(2*(level1+level2+2)) affineAction[Sum[cutoff[normalOrdering[affineOps[auxF[level1,level2,k],auxE[level1,level2,m-k]]],depth1,depth2],{k,-Infinity,Infinity}],ddfTp[ddf1,ddf2]]]
+sugawaraOpTpAction[m_,ddfTp[ddf1_,ddf2_]]:=Block[{ddfProperties1=ddfProdInvestigator[ddf1],ddfProperties2=ddfProdInvestigator[ddf2]},
+Block[{level1=ddfProperties1[[1]],depth1=ddfProperties1[[1]]+(ddfProperties1[[3]]^2-1+ddfProperties1[[2]])/ddfProperties1[[1]],level2=ddfProperties2[[1]],depth2=ddfProperties2[[1]]+(ddfProperties2[[3]]^2-1+ddfProperties2[[2]])/ddfProperties2[[1]]}, 1/(4*(level1+level2+2)) affineAction[Sum[cutoff[normalOrdering[affineOps[auxH[k],auxH[m-k]]],depth1,depth2],{k,-Infinity,Infinity}],ddfTp[ddf1,ddf2]]+1/(2*(level1+level2+2)) affineAction[Sum[cutoff[normalOrdering[affineOps[auxE[k],auxF[m-k]]],depth1,depth2],{k,-Infinity,Infinity}],ddfTp[ddf1,ddf2]]+1/(2*(level1+level2+2)) affineAction[Sum[cutoff[normalOrdering[affineOps[auxF[k],auxE[m-k]]],depth1,depth2],{k,-Infinity,Infinity}],ddfTp[ddf1,ddf2]]]]
+
+
+(* ::Text:: *)
+(*Define one version of the action where the arguments are provided manually*)
+
+
+(* ::Input::Initialization:: *)
+sugawaraOpTpActionPrivate[level1_,depth1_,level2_,depth2_,m_,ddfTp[ddf1_,ddf2_]]:=1/(4*(level1+level2+2)) affineAction[Sum[cutoff[normalOrdering[affineOps[auxH[k],auxH[m-k]]],depth1,depth2],{k,-Infinity,Infinity}],ddfTp[ddf1,ddf2]]+1/(2*(level1+level2+2)) affineAction[Sum[cutoff[normalOrdering[affineOps[auxE[k],auxF[m-k]]],depth1,depth2],{k,-Infinity,Infinity}],ddfTp[ddf1,ddf2]]+1/(2*(level1+level2+2)) affineAction[Sum[cutoff[normalOrdering[affineOps[auxF[k],auxE[m-k]]],depth1,depth2],{k,-Infinity,Infinity}],ddfTp[ddf1,ddf2]]
 
 
 (* ::Section:: *)
@@ -3017,19 +2993,12 @@ sugawaraOpTpAction[level1_,level2_,m_,ddfTp[ddf1_,ddf2_]]:=Block[{depth1=level1+
 
 
 (* ::Text:: *)
-(*Define the coset Virasoro operator. It takes three arguments and acts on two states*)
+(*Define the coset Virasoro operator that acts on a ddfTp. It takes the mode as an argument.*)
+(*There is no coset Virasoro operator that acts on commutators.*)
 
 
 (* ::Input::Initialization:: *)
-cosetVirasoroOp[level1_,level2_,m_]:=Function[toDDF[sortProd[ExpandAll[com[sugawaraOp[level1,m][#1],#2]]]]+toDDF[sortProd[ExpandAll[com[#1,sugawaraOp[level2,m][#2]]]]]-sugawaraOp[level1+level2,m][toDDF[sortProd[ExpandAll[com[#1,#2]]]]]]
-
-
-(* ::Text:: *)
-(*Define the coset Virasoro operator that acts on a ddfTp.*)
-
-
-(* ::Input::Initialization:: *)
-cosetVirasoroOpTp[level1_,level2_,m_]:=Function[cosetVirasoroOpTpAction[level1,level2,m,Expand[#]]]
+cosetVirasoroOpTp[m_]:=Function[Block[{expr=Expand[#]},cosetVirasoroOpTpAction[m,expr]]]
 
 
 (* ::Text:: *)
@@ -3037,23 +3006,26 @@ cosetVirasoroOpTp[level1_,level2_,m_]:=Function[cosetVirasoroOpTpAction[level1,l
 
 
 (* ::Input::Initialization:: *)
-cosetVirasoroOpTpAction[level1_,level2_,m_,0]:=0
+cosetVirasoroOpTpAction[m_,0]:=0
 
 
 (* ::Input::Initialization:: *)
-cosetVirasoroOpTpAction[level1_,level2_,m_,Plus[state1_,state2_]]:=cosetVirasoroOpTpAction[level1,level2,m,state1]+cosetVirasoroOpTpAction[level1,level2,m,state2]
+cosetVirasoroOpTpAction[m_,Plus[state1_,state2_]]:=cosetVirasoroOpTpAction[m,state1]+cosetVirasoroOpTpAction[m,state2]
 
 
 (* ::Input::Initialization:: *)
-cosetVirasoroOpTpAction[level1_,level2_,m_,num_*ddfTp[ddf1_,ddf2_]]:=num*cosetVirasoroOpTpAction[level1,level2,m,ddfTp[ddf1,ddf2]]
+cosetVirasoroOpTpAction[m_,num_*ddfTp[ddf1_,ddf2_]]:=num*cosetVirasoroOpTpAction[m,ddfTp[ddf1,ddf2]]
 
 
 (* ::Input::Initialization:: *)
-cosetVirasoroOpTpAction[level1_,level2_,m_,eps[a_,b_]*state_]:=eps[a,b]*cosetVirasoroOpTpAction[level1,level2,m,state]
+cosetVirasoroOpTpAction[m_,eps[a_,b_]*state_]:=eps[a,b]*cosetVirasoroOpTpAction[m,state]
 
 
 (* ::Input::Initialization:: *)
-cosetVirasoroOpTpAction[level1_,level2_,m_,ddfTp[ddf1_,ddf2_]]:=ddfTp[sugawaraOp[level1,m][ddf1],ddf2]+ddfTp[ddf1,sugawaraOp[level2,m][ddf2]]-sugawaraOpTpAction[level1,level2,m,ddfTp[ddf1,ddf2]]
+cosetVirasoroOpTpAction[m_,ddfTp[ddf1_,ddf2_]]:=Block[{ddfProperties1=ddfProdInvestigator[ddf1],ddfProperties2=ddfProdInvestigator[ddf2]},
+Block[{level1=ddfProperties1[[1]],modeSum1=ddfProperties1[[2]],depth1=ddfProperties1[[1]]+(ddfProperties1[[3]]^2-1+ddfProperties1[[2]])/ddfProperties1[[1]],
+level2=ddfProperties2[[1]],modeSum2=ddfProperties2[[2]],depth2=ddfProperties2[[1]]+(ddfProperties2[[3]]^2-1+ddfProperties2[[2]])/ddfProperties2[[1]]},
+ddfTp[sugawaraOpAction[level1,modeSum1,m,ddf1],ddf2]+ddfTp[ddf1,sugawaraOpAction[level2,modeSum2,m,ddf2]]-sugawaraOpTpActionPrivate[level1,depth1,level2,depth2,m,ddfTp[ddf1,ddf2]]]]
 
 
 (* ::Section:: *)
@@ -3081,27 +3053,27 @@ affineOps[expr1_,Times[n_*Plus[expr2_,expr3_]]]:=affineOps[expr1,n*expr2]+affine
 
 
 (* ::Input::Initialization:: *)
-affineOps[f_*auxH[level1_,level2_,m_],expr1_]:=f*affineOps[auxH[level1,level2,m],expr1]
+affineOps[f_*auxH[m_],expr1_]:=f*affineOps[auxH[m],expr1]
 
 
 (* ::Input::Initialization:: *)
-affineOps[f_*auxE[level1_,level2_,m_],expr1_]:=f*affineOps[auxE[level1,level2,m],expr1]
+affineOps[f_*auxE[m_],expr1_]:=f*affineOps[auxE[m],expr1]
 
 
 (* ::Input::Initialization:: *)
-affineOps[f_*auxF[level1_,level2_,m_],expr1_]:=f*affineOps[auxF[level1,level2,m],expr1]
+affineOps[f_*auxF[m_],expr1_]:=f*affineOps[auxF[m],expr1]
 
 
 (* ::Input::Initialization:: *)
-affineOps[expr1_,f_*auxH[level1_,level2_,m_]]:=f*affineOps[expr1,auxH[level1,level2,m]]
+affineOps[expr1_,f_*auxH[m_]]:=f*affineOps[expr1,auxH[m]]
 
 
 (* ::Input::Initialization:: *)
-affineOps[expr1_,f_*auxE[level1_,level2_,m_]]:=f*affineOps[expr1,auxE[level1,level2,m]]
+affineOps[expr1_,f_*auxE[m_]]:=f*affineOps[expr1,auxE[m]]
 
 
 (* ::Input::Initialization:: *)
-affineOps[expr1_,f_*auxF[level1_,level2_,m_]]:=f*affineOps[expr1,auxF[level1,level2,m]]
+affineOps[expr1_,f_*auxF[m_]]:=f*affineOps[expr1,auxF[m]]
 
 
 (* ::Section:: *)
@@ -3183,19 +3155,20 @@ affineSchurEval::nnarg= "The Schur polynomial necessary for this calculation has
 
 (* ::Text:: *)
 (*Formally define the affine generators as functions.*)
+(*Find out level and mode sum according to input.*)
 (*The definition of affineActionH,  affineActionE and affineActionF are given below.*)
 
 
 (* ::Input::Initialization:: *)
-affineH[level__,m_]:=Function[affineActionH[level,m,Expand[#]]]
+affineH[m_]:=Function[Block[{expr=Expand[#]},affineActionH[m,expr]]]
 
 
 (* ::Input::Initialization:: *)
-affineE[level__,m_]:=Function[affineActionE[level,m,Expand[#]]]
+affineE[m_]:=Function[Block[{expr=Expand[#]},affineActionE[m,expr]]]
 
 
 (* ::Input::Initialization:: *)
-affineF[level__,m_]:=Function[affineActionF[level,m,Expand[#]]]
+affineF[m_]:=Function[Block[{expr=Expand[#]},affineActionF[m,expr]]]
 
 
 (* ::Section:: *)
@@ -3211,19 +3184,19 @@ affineF[level__,m_]:=Function[affineActionF[level,m,Expand[#]]]
 
 
 (* ::Input::Initialization:: *)
-affineActionH[level__,m_,Plus[state1_,state2_]]:=affineActionH[level,m,state1]+affineActionH[level,m,state2]
+affineActionH[m_,Plus[state1_,state2_]]:=affineActionH[m,state1]+affineActionH[m,state2]
 
 
 (* ::Input::Initialization:: *)
-affineActionH[level__,m_,num_*ddfProd[ddf_,tachyon_]]:=num*affineActionH[level,m,ddfProd[ddf,tachyon]]
+affineActionH[m_,num_*ddfProd[ddf_,tachyon_]]:=num*affineActionH[m,ddfProd[ddf,tachyon]]
 
 
 (* ::Input::Initialization:: *)
-affineActionH[level__,m_,num_*ddfTp[ddf1_,ddf2_]]:=num*affineActionH[level,m,ddfTp[ddf1,ddf2]]
+affineActionH[m_,num_*ddfTp[ddf1_,ddf2_]]:=num*affineActionH[m,ddfTp[ddf1,ddf2]]
 
 
 (* ::Input::Initialization:: *)
-affineActionH[level__,m_,eps[a_,b_]*state_]:=eps[a,b]*affineActionH[level,m,state]
+affineActionH[m_,eps[a_,b_]*state_]:=eps[a,b]*affineActionH[m,state]
 
 
 (* ::Text:: *)
@@ -3231,23 +3204,23 @@ affineActionH[level__,m_,eps[a_,b_]*state_]:=eps[a,b]*affineActionH[level,m,stat
 
 
 (* ::Input::Initialization:: *)
-affineActionH[level__,m_,0]:=0
+affineActionH[m_,0]:=0
 
 
 (* ::Input::Initialization:: *)
-affineActionH[level__,m_,exp[tachyon_]]:=affineActionH[level,m,ddfProd[{},exp[tachyon]]]
+affineActionH[m_,exp[tachyon_]]:=affineActionH[m,ddfProd[{},exp[tachyon]]]
 
 
 (* ::Input::Initialization:: *)
-affineActionH[level__,m_,n_*exp[tachyon_]]:=n*affineActionH[level,m,ddfProd[{},exp[tachyon]]]
+affineActionH[m_,n_*exp[tachyon_]]:=n*affineActionH[m,ddfProd[{},exp[tachyon]]]
 
 
 (* ::Input::Initialization:: *)
-affineActionH[level__,m_,ddfProd[ddf_,tachyon_]]:=Sqrt[2]*joinProd[ddfProdHold[{A[level,level*m]}],ddfProd[ddf,tachyon]]
+affineActionH[m_,ddfProd[ddf_,tachyon_]]:=Block[{level=ddfProdInvestigator[ddfProd[ddf,tachyon]][[1]]},Sqrt[2]*joinProd[ddfProdHold[{A[level,level*m]}],ddfProd[ddf,tachyon]]]
 
 
 (* ::Input::Initialization:: *)
-affineActionH[level1_,level2_,m_,ddfTp[ddf1_,ddf2_]]:=ddfTp[affineActionH[level1,m,ddf1],ddf2]+ddfTp[ddf1,affineActionH[level2,m,ddf2]]
+affineActionH[m_,ddfTp[ddf1_,ddf2_]]:=ddfTp[affineActionH[m,ddf1],ddf2]+ddfTp[ddf1,affineActionH[m,ddf2]]
 
 
 (* ::Text:: *)
@@ -3255,19 +3228,19 @@ affineActionH[level1_,level2_,m_,ddfTp[ddf1_,ddf2_]]:=ddfTp[affineActionH[level1
 
 
 (* ::Input::Initialization:: *)
-affineActionE[level__,m_,Plus[state1_,state2_]]:=affineActionE[level,m,state1]+affineActionE[level,m,state2]
+affineActionE[m_,Plus[state1_,state2_]]:=affineActionE[m,state1]+affineActionE[m,state2]
 
 
 (* ::Input::Initialization:: *)
-affineActionE[level__,m_,num_*ddfProd[ddf_,tachyon_]]:=num*affineActionE[level,m,ddfProd[ddf,tachyon]]
+affineActionE[m_,num_*ddfProd[ddf_,tachyon_]]:=num*affineActionE[m,ddfProd[ddf,tachyon]]
 
 
 (* ::Input::Initialization:: *)
-affineActionE[level__,m_,num_*ddfTp[ddf1_,ddf2_]]:=num*affineActionE[level,m,ddfTp[ddf1,ddf2]]
+affineActionE[m_,num_*ddfTp[ddf1_,ddf2_]]:=num*affineActionE[m,ddfTp[ddf1,ddf2]]
 
 
 (* ::Input::Initialization:: *)
-affineActionE[level__,m_,eps[a_,b_]*state_]:=eps[a,b]*affineActionE[level,m,state]
+affineActionE[m_,eps[a_,b_]*state_]:=eps[a,b]*affineActionE[m,state]
 
 
 (* ::Text:: *)
@@ -3275,23 +3248,23 @@ affineActionE[level__,m_,eps[a_,b_]*state_]:=eps[a,b]*affineActionE[level,m,stat
 
 
 (* ::Input::Initialization:: *)
-affineActionE[level__,m_,0]:=0
+affineActionE[m_,0]:=0
 
 
 (* ::Input::Initialization:: *)
-affineActionE[level__,m_,exp[tachyon_]]:=affineActionE[level,m,ddfProd[{},exp[tachyon]]]
+affineActionE[m_,exp[tachyon_]]:=affineActionE[m,ddfProd[{},exp[tachyon]]]
 
 
 (* ::Input::Initialization:: *)
-affineActionE[level__,m_,n_*exp[tachyon_]]:=n*affineActionE[level,m,ddfProd[{},exp[tachyon]]]
+affineActionE[m_,n_*exp[tachyon_]]:=n*affineActionE[m,ddfProd[{},exp[tachyon]]]
 
 
 (* ::Input::Initialization:: *)
-affineActionE[level__,m_,ddfProd[ddf_,exp[tachyon_]]]:=Block[{modeSum=modeNoAdder[ddfProd[ddf,exp[tachyon]]]},eps[s,tachyon-modeSum/level*d] joinProd[transformAuxA[ReplaceAll[expQPexp[level,m,modeSum,1,exp[tachyon]], affineSchur->affineSchurEval],{}],ddfProd[ddf,exp[tachyon]]]]
+affineActionE[m_,ddfProd[ddf_,exp[tachyon_]]]:=Block[{ddfProperties=ddfProdInvestigator[ddfProd[ddf,exp[tachyon]]]},Block[{level=ddfProperties[[1]],modeSum=ddfProperties[[2]]},eps[s,tachyon-modeSum/level*d] joinProd[transformAuxA[ReplaceAll[expQPexp[level,m,modeSum,1,exp[tachyon]], affineSchur->affineSchurEval],{}],ddfProd[ddf,exp[tachyon]]]]]
 
 
 (* ::Input::Initialization:: *)
-affineActionE[level1_,level2_,m_,ddfTp[ddf1_,ddf2_]]:=ddfTp[affineActionE[level1,m,ddf1],ddf2]+ddfTp[ddf1,affineActionE[level2,m,ddf2]]
+affineActionE[m_,ddfTp[ddf1_,ddf2_]]:=ddfTp[affineActionE[m,ddf1],ddf2]+ddfTp[ddf1,affineActionE[m,ddf2]]
 
 
 (* ::Text:: *)
@@ -3299,19 +3272,19 @@ affineActionE[level1_,level2_,m_,ddfTp[ddf1_,ddf2_]]:=ddfTp[affineActionE[level1
 
 
 (* ::Input::Initialization:: *)
-affineActionF[level__,m_,Plus[state1_,state2_]]:=affineActionF[level,m,state1]+affineActionF[level,m,state2]
+affineActionF[m_,Plus[state1_,state2_]]:=affineActionF[m,state1]+affineActionF[m,state2]
 
 
 (* ::Input::Initialization:: *)
-affineActionF[level__,m_,num_*ddfProd[ddf_,tachyon_]]:=num*affineActionF[level,m,ddfProd[ddf,tachyon]]
+affineActionF[m_,num_*ddfProd[ddf_,tachyon_]]:=num*affineActionF[m,ddfProd[ddf,tachyon]]
 
 
 (* ::Input::Initialization:: *)
-affineActionF[level__,m_,num_*ddfTp[ddf1_,ddf2_]]:=num*affineActionF[level,m,ddfTp[ddf1,ddf2]]
+affineActionF[m_,num_*ddfTp[ddf1_,ddf2_]]:=num*affineActionF[m,ddfTp[ddf1,ddf2]]
 
 
 (* ::Input::Initialization:: *)
-affineActionF[level__,m_,eps[a_,b_]*state_]:=eps[a,b]*affineActionF[level,m,state]
+affineActionF[m_,eps[a_,b_]*state_]:=eps[a,b]*affineActionF[m,state]
 
 
 (* ::Text:: *)
@@ -3319,23 +3292,23 @@ affineActionF[level__,m_,eps[a_,b_]*state_]:=eps[a,b]*affineActionF[level,m,stat
 
 
 (* ::Input::Initialization:: *)
-affineActionF[level__,m_,0]:=0
+affineActionF[m_,0]:=0
 
 
 (* ::Input::Initialization:: *)
-affineActionF[level__,m_,exp[tachyon_]]:=affineActionF[level,m,ddfProd[{},exp[tachyon]]]
+affineActionF[m_,exp[tachyon_]]:=affineActionF[m,ddfProd[{},exp[tachyon]]]
 
 
 (* ::Input::Initialization:: *)
-affineActionF[level__,m_,n_*exp[tachyon_]]:=n*affineActionF[level,m,ddfProd[{},exp[tachyon]]]
+affineActionF[m_,n_*exp[tachyon_]]:=n*affineActionF[m,ddfProd[{},exp[tachyon]]]
 
 
 (* ::Input::Initialization:: *)
-affineActionF[level__,m_,ddfProd[ddf_,exp[tachyon_]]]:=Block[{modeSum=modeNoAdder[ddfProd[ddf,exp[tachyon]]]},-eps[-s,tachyon-modeSum/level*d]joinProd[transformAuxA[ReplaceAll[expQPexp[level,m,modeSum,-1,exp[tachyon]],affineSchur->affineSchurEval],{}],ddfProd[ddf,exp[tachyon]]]]
+affineActionF[m_,ddfProd[ddf_,exp[tachyon_]]]:=Block[{ddfProperties=ddfProdInvestigator[ddfProd[ddf,exp[tachyon]]]},Block[{level=ddfProperties[[1]],modeSum=ddfProperties[[2]]},-eps[-s,tachyon-modeSum/level*d]joinProd[transformAuxA[ReplaceAll[expQPexp[level,m,modeSum,-1,exp[tachyon]],affineSchur->affineSchurEval],{}],ddfProd[ddf,exp[tachyon]]]]]
 
 
 (* ::Input::Initialization:: *)
-affineActionF[level1_,level2_,m_,ddfTp[ddf1_,ddf2_]]:=ddfTp[affineActionF[level1,m,ddf1],ddf2]+ddfTp[ddf1,affineActionF[level2,m,ddf2]]
+affineActionF[m_,ddfTp[ddf1_,ddf2_]]:=ddfTp[affineActionF[m,ddf1],ddf2]+ddfTp[ddf1,affineActionF[m,ddf2]]
 
 
 (* ::Text:: *)
@@ -3371,15 +3344,15 @@ affineAction[n_*affineOps[expr1_,expr2_],ddfTp[ddf1_,ddf2_]]:=n*affineAction[aff
 
 
 (* ::Input::Initialization:: *)
-affineAction[affineOps[auxH[level1_,level2_,m1_],auxH[level1_,level2_,m2_]],ddfTp[ddf1_,ddf2_]]:=affineH[level1,level2,m1][affineH[level1,level2,m2][ddfTp[ddf1,ddf2]]]
+affineAction[affineOps[auxH[m1_],auxH[m2_]],ddfTp[ddf1_,ddf2_]]:=affineH[m1][affineH[m2][ddfTp[ddf1,ddf2]]]
 
 
 (* ::Input::Initialization:: *)
-affineAction[affineOps[auxE[level1_,level2_,m1_],auxF[level1_,level2_,m2_]],ddfTp[ddf1_,ddf2_]]:=affineE[level1,level2,m1][affineF[level1,level2,m2][ddfTp[ddf1,ddf2]]]
+affineAction[affineOps[auxE[m1_],auxF[m2_]],ddfTp[ddf1_,ddf2_]]:=affineE[m1][affineF[m2][ddfTp[ddf1,ddf2]]]
 
 
 (* ::Input::Initialization:: *)
-affineAction[affineOps[auxF[level1_,level2_,m1_],auxE[level1_,level2_,m2_]],ddfTp[ddf1_,ddf2_]]:=affineF[level1,level2,m1][affineE[level1,level2,m2][ddfTp[ddf1,ddf2]]]
+affineAction[affineOps[auxF[m1_],auxE[m2_]],ddfTp[ddf1_,ddf2_]]:=affineF[m1][affineE[m2][ddfTp[ddf1,ddf2]]]
 
 
 (* ::Section:: *)
