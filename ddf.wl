@@ -60,7 +60,7 @@ r::usage="Simple root \!\(\*SubscriptBox[\(r\), \(-1\)]\).";
 
 
 (* ::Input::Initialization:: *)
-d::usage="Affine null root \[Delta] = \!\(\*SubscriptBox[\(r\), \(\(0\)\(\\\ \)\)]\)+ \!\(\*SubscriptBox[\(r\), \(1\)]\).";
+d::usage="Affine null root \[Delta] = \!\(\*SubscriptBox[\(r\), \(0\(\\\ \)\)]\)+ \!\(\*SubscriptBox[\(r\), \(1\)]\).";
 
 
 (* ::Input::Initialization:: *)
@@ -76,731 +76,127 @@ cartanMatrix::usage="The Catan matrix of F";
 
 
 (* ::Input::Initialization:: *)
-sp::usage="\!\(\*
-StyleBox[\"sp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"linCombo_roots\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"linCombo_roots\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the scalar product of roots according to the Cartan matrix. Expects two arguments which are linear combinations of roots. Returns a number.";
+sp::usage="sp[linCombo_roots_1,linCombo_roots_2] computes the scalar product of roots according to the Cartan matrix. Expects two arguments which are linear combinations of roots. Returns a number.";
 
 
 (* ::Input::Initialization:: *)
-A::usage="\!\(\*
-StyleBox[\"A\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) is the transversal DDF operator of level l and mode m. \!\(\*
-StyleBox[\"A\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) is used in the first argument of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\).";
+A::usage="A[l,m] is the transversal DDF operator of level l and mode m. A[l,m] is used in the first argument of ddfProd.";
 
 
 (* ::Input::Initialization:: *)
-B::usage="\!\(\*
-StyleBox[\"B\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) is the longitudinal DDF operator of level l and mode m. \!\(\*
-StyleBox[\"B\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) is used in the first argument of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\).";
+B::usage="B[l,m] is the longitudinal DDF operator of level l and mode m. B[l,m] is used in the first argument of ddfProd.";
 
 
 (* ::Input::Initialization:: *)
-opA::usage="\!\(\*
-StyleBox[\"opA\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"state\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) is the transversal DDF operator of level l and mode m. It acts on other DDF operators (\!\(\*
-StyleBox[\"opA\",\nFontWeight->\"Bold\"]\) or \!\(\*
-StyleBox[\"opB\",\nFontWeight->\"Bold\"]\)) or tachionic states (\!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"limCombo_roots\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)). Returns the resulting state as a Fock space element (see also \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\)).";
+opA::usage="opA[l,m][state] is the transversal DDF operator of level l and mode m. It acts on other DDF operators (opA or opB) or tachionic states (exp[limCombo_roots]). Returns the resulting state as a Fock space element (see also tp).";
 
 
 (* ::Input::Initialization:: *)
-opB::usage="\!\(\*
-StyleBox[\"opB\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"state\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) is the longitudinal DDF operator of level l and mode m. It acts on other DDF operators (\!\(\*
-StyleBox[\"opA\",\nFontWeight->\"Bold\"]\) or \!\(\*
-StyleBox[\"opB\",\nFontWeight->\"Bold\"]\)) or tachionic states (\!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"limCombo_roots\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)). Returns the resulting state as a Fock space element (see also \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\)).";
+opB::usage="opB[l,m][state] is the longitudinal DDF operator of level l and mode m. It acts on other DDF operators (opA or opB) or tachionic states (exp[limCombo_roots]). Returns the resulting state as a Fock space element (see also tp).";
 
 
 (* ::Input::Initialization:: *)
-exp::usage="\!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"limCombo_roots\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) defines the tachionic states that span the twisted group algebra \!\(\*TemplateBox[{},\n\"Reals\"]\){\[CapitalLambda]}. Used in the second argument of \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\) and \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) or as the argument of \!\(\*
-StyleBox[\"opA\",\nFontWeight->\"Bold\"]\) and \!\(\*
-StyleBox[\"opB\",\nFontWeight->\"Bold\"]\).";
+exp::usage="exp[limCombo_roots] defines the tachionic states that span the twisted group algebra \!\(\*TemplateBox[{},\n\"Reals\"]\){\[CapitalLambda]}. Used in the second argument of tp and ddfProd or as the argument of opA and opB.";
 
 
 (* ::Input::Initialization:: *)
-prod::usage="\!\(\*
-StyleBox[\"prod\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"{\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"list_roots\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"}\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) is a product of roots \!\(\*SubscriptBox[\(u\), \(i\)]\)[m] \[Element] \!\(\*SubscriptBox[\(\[CapitalLambda]\), \(\[DoubleStruckCapitalR]\)]\), where \!\(\*SubscriptBox[\(\[CapitalLambda]\), \(\[DoubleStruckCapitalR]\)]\) = \[DoubleStruckCapitalR] \[CircleTimes] \[CapitalLambda] is the vector space of roots and \!\(\*SubscriptBox[\(u\), \(i\)]\) \[Element] {r,d,s} and m \[Element] \[CapitalNu]. The product is non-commutative. Finite products of creation operators form the algebra S(\!\(\*SuperscriptBox[OverscriptBox[\(h\), \(^\)], \(i\)]\)). Expects a list of \!\(\*SubscriptBox[\(u\), \(i\)]\)[m].";
+prod::usage="prod[{list_roots}] is a product of roots \!\(\*SubscriptBox[\(u\), \(i\)]\)[m] \[Element] \!\(\*SubscriptBox[\(\[CapitalLambda]\), \(\[DoubleStruckCapitalR]\)]\), where \!\(\*SubscriptBox[\(\[CapitalLambda]\), \(\[DoubleStruckCapitalR]\)]\) = \[DoubleStruckCapitalR] \[CircleTimes] \[CapitalLambda] is the vector space of roots and \!\(\*SubscriptBox[\(u\), \(i\)]\) \[Element] {r,d,s} and m \[Element] \[CapitalNu]. The product is non-commutative. Finite products of creation operators form the algebra S(\!\(\*SuperscriptBox[OverscriptBox[\(h\), \(^\)], \(i\)]\)). Expects a list of \!\(\*SubscriptBox[\(u\), \(i\)]\)[m].";
 
 
 (* ::Input::Initialization:: *)
-tp::usage="\!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"prod\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"{\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"list_roots\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"}\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"limCombo_roots\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) is the tensor product of an element from the vector space of finite products of creation operators S(\!\(\*SuperscriptBox[OverscriptBox[\(h\), \(^\)], \(i\)]\)) and the twisted group algebra \!\(\*TemplateBox[{},\n\"Reals\"]\){\[CapitalLambda]}. \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\) is an element of the Fock space \[ScriptCapitalF]. The functions \!\(\*
-StyleBox[\"opA\",\nFontWeight->\"Bold\"]\), \!\(\*
-StyleBox[\"opB\",\nFontWeight->\"Bold\"]\), \!\(\*
-StyleBox[\"com\",\nFontWeight->\"Bold\"]\) and \!\(\*
-StyleBox[\"toTp\",\nFontWeight->\"Bold\"]\) return a \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\).";
+tp::usage="tp[prod[{list_roots},exp[limCombo_roots]] is the tensor product of an element from the vector space of finite products of creation operators S(\!\(\*SuperscriptBox[OverscriptBox[\(h\), \(^\)], \(i\)]\)) and the twisted group algebra \!\(\*TemplateBox[{},\n\"Reals\"]\){\[CapitalLambda]}. tp is an element of the Fock space \[ScriptCapitalF]. The functions opA, opB, com and toTp return a tp.";
 
 
 (* ::Input::Initialization:: *)
-sortProd::usage="\!\(\*
-StyleBox[\"sortProd\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"linCombo_tp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) expects a linear combination of \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"prod\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"{\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"}\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\). Returns that same linear combination with the elements of \!\(\*
-StyleBox[\"prod\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"{\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"}\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) normal ordered.";
+sortProd::usage="sortProd[linCombo_tp] expects a linear combination of tp[prod[{...}],exp[...]]. Returns that same linear combination with the elements of prod[{...}] normal ordered.";
 
 
 (* ::Input::Initialization:: *)
-com::usage="\!\(\*
-StyleBox[\"com\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"state_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"state_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the commutator of two states from the Fock space \[ScriptCapitalF]. Takes linear combinations of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) or \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\) as arguments. Returns a sum of tensor producs \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\).";
+com::usage="com[state_1, state_2] computes the commutator of two states from the Fock space \[ScriptCapitalF]. Takes linear combinations of ddfProd or tp as arguments. Returns a sum of tensor producs tp.";
 
 
 (* ::Input::Initialization:: *)
-eps::usage="\!\(\*
-StyleBox[\"eps\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"root_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"root_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) defines the cocylce factor of two roots. Is a bimultitplicative function. If \!\(\*
-StyleBox[\"root_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\) or \!\(\*
-StyleBox[\"root_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\) is a sum of roots, \!\(\*
-StyleBox[\"eps\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"root_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"root_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) simplifies to a product of coclyce factors of simple roots and the affine null root. The conventions are as follows: \!\(\*
-StyleBox[\"eps\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"r\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"r\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"=\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"-\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\), \!\(\*
-StyleBox[\"eps\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"d\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"d\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"=\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\), \!\(\*
-StyleBox[\"eps\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"s\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"s\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"=\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"-\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\), \!\(\*
-StyleBox[\"eps\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"r\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"s\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"=\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"eps\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"s\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"r\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"=\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\), \!\(\*
-StyleBox[\"eps\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"d\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"s\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"=\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"eps\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"s\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"d\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"=\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\) and \!\(\*
-StyleBox[\"eps\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"d\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"r\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"=\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"-\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"eps\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"r\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"d\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"=\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\*
-StyleBox[\(\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\) .\)]";
+eps::usage="eps[root_1,root_2] defines the cocylce factor of two roots. Is a bimultitplicative function. If root_1 or root_2 is a sum of roots, eps[root_1,root_2] simplifies to a product of coclyce factors of simple roots and the affine null root. The conventions are as follows: eps[r,r] = -1, eps[d,d] = 1, eps[s,s] = -1, eps[r,s] = eps[s,r] = 1, eps[d,s] = eps[s,d] = 1 and eps[d,r] = - eps[r,d] = 1.";
 
 
 (* ::Input::Initialization:: *)
-a::usage="\!\(\*
-StyleBox[\"a\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"n\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the tachionyc momentum of level l and weight n according to the formula a[l,n] = -l * r - (l + (n^2 - 1)/l) d + n * s.";
+a::usage="a[l,n] computes the tachionyc momentum of level l and weight n according to the formula a[l,n] = -l * r - (l + (n^2 - 1)/l) d + n * s.";
 
 
 (* ::Input::Initialization:: *)
-virasoroOp::usage="\!\(\*
-StyleBox[\"virasoroOp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"state\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the action of the Virasoro operator with mode number m on a state. Expects the state to be an elment of the Fock space \[ScriptCapitalF], i.e. a linear combination of tensor products \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"prod\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"{\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"}\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\). A state is called physical if it satisfies \!\(\*
-StyleBox[\"(\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"virasoroOp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"state\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"-\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"KroneckerDelta\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"0\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"*\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"state\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\")\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"=\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"0\",\nFontWeight->\"Bold\"]\) for all m \[GreaterEqual] 0.";
+virasoroOp::usage="virasoroOp[m][state] computes the action of the Virasoro operator with mode number m on a state. Expects the state to be an elment of the Fock space \[ScriptCapitalF], i.e. a linear combination of tensor products tp[prod[{...}],exp[...]]. A state is called physical if it satisfies (virasoroOp[m][state] - KroneckerDelta[m,0] * state) = 0 for all m \[GreaterEqual] 0.";
 
 
 (* ::Input::Initialization:: *)
-ddfTp::usage="\!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"linCombo_ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"linCombo_ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) defines the tensor product of two DDF states. Takes two arguments, which are linear combinations of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\). The DDF tensor product \!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\) is used to compute the action of the coset Virasoro operator on tensor products of DDF states.";
+ddfTp::usage="ddfTp[linCombo_ddfProd_1,linCombo_ddfProd_2] defines the tensor product of two DDF states. Takes two arguments, which are linear combinations of ddfProd. The DDF tensor product ddfTp is used to compute the action of the coset Virasoro operator on tensor products of DDF states.";
 
 
 (* ::Input::Initialization:: *)
-ddfProd::usage="\!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"{\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"list_AB\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"}\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"linCombo_roots\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) defines a DDF state. Takes two arguments. The first argument is a list of transversal and longitudinal DDF operators \!\(\*
-StyleBox[\"A\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) and \!\(\*
-StyleBox[\"B\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\). The second argument is a tachyonic ground state \!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"linCombo_roots\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\). If the list of DDF operators is not normal ordered or contains annihilation operators \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) will order the product and act with the annihilation operators respecting the commutation relations of DDF operators. With the function \!\(\*
-StyleBox[\"toTp\",\nFontWeight->\"Bold\"]\) a \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) is converted into a sum of tensor products \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"prod\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"{\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"}\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\).";
+ddfProd::usage="ddfProd[{list_AB},exp[linCombo_roots]] defines a DDF state. Takes two arguments. The first argument is a list of transversal and longitudinal DDF operators A[l,m] and B[l,m]. The second argument is a tachyonic ground state exp[linCombo_roots]. If the list of DDF operators is not normal ordered or contains annihilation operators ddfProd will order the product and act with the annihilation operators respecting the commutation relations of DDF operators. With the function toTp a ddfProd is converted into a sum of tensor products tp[prod[{...}],exp[...]].";
 
 
 (* ::Input::Initialization:: *)
-toTp::usage="\!\(\*
-StyleBox[\"toTp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"linCombo_ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) maps a \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) into a tensor product \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"prod\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"{\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"}\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\). If possible it will read the association from a .txt file stored in the folder \!\(\*
-StyleBox[\"ddf_states\",\nFontWeight->\"Bold\"]\). If the required file does not exist it proceeds with a manual calculation. If it is expected that the manual calculation can take a long time a warining message is issued. Expects a linear combination of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\). Returns a linear combination of \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\).";
+toTp::usage="toTp[linCombo_ddfProd] maps a ddfProd into a tensor product tp[prod[{...}],exp[...]]. If possible it will read the association from a .txt file stored in the folder ddf_states. If the required file does not exist it proceeds with a manual calculation. If it is expected that the manual calculation can take a long time a warining message is issued. Expects a linear combination of ddfProd. Returns a linear combination of tp.";
 
 
 (* ::Input::Initialization:: *)
-toDDF::usage="\!\(\*
-StyleBox[\"toDDF\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"linCombo_tp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) turns a linear combination of \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"prod\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"{\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"}\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) into a linear combintation of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"{\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"}\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\). Works only if a basis of ddfProds with the correct level, depth and weight for the tensor products exisits in the folder \!\(\*
-StyleBox[\"ddf_states\",\nFontWeight->\"Bold\"]\). Otherwise the unevaluated expression is returned together with an error message.";
+toDDF::usage="toDDF[linCombo_tp] turns a linear combination of tp[prod[{...}],exp[...]] into a linear combintation of ddfProd[{...},exp[...]]. Works only if a basis of ddfProds with the correct level, depth and weight for the tensor products exisits in the folder ddf_states. Otherwise the unevaluated expression is returned together with an error message.";
 
 
 (* ::Input::Initialization:: *)
-rank::usage="\!\(\*
-StyleBox[\"rank\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"list_ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) and \!\(\*
-StyleBox[\"rank\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"list_tp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) returns the rank of the list of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) or \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\). Returns an integer.";
+rank::usage="rank[list_ddfProd] and rank[list_tp] returns the rank of the list of ddfProd or tp. Returns an integer.";
 
 
 (* ::Input::Initialization:: *)
-linearIndependenQ::usage="\!\(\*
-StyleBox[\"linearIndependenQ\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"list_ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) and \!\(\*
-StyleBox[\"linearIndependenQ\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"list_tp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) checks if the elements in a list of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) or \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\) are linearly independent. Returns a boolean.";
+linearIndependenQ::usage="linearIndependenQ[list_ddfProd], linearIndependenQ[list_ddfTp] and linearIndependenQ[list_tp] checks if the elements in a list of ddfProd, ddfTp or tp are linearly independent. Returns a boolean.";
 
 
 (* ::Input::Initialization:: *)
-fileNamesList::usage="\!\(\*
-StyleBox[\"fileNamesList\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"n\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) creates a list of all file names for the DDF states of a given level l, mode m and weight n. Returns a list of strings.";
+fileNamesList::usage="fileNamesList[l, m, n] creates a list of all file names for the DDF states of a given level l, mode m and weight n. Returns a list of strings.";
 
 
 (* ::Input::Initialization:: *)
-ddfStatesList::usage="\!\(\*
-StyleBox[\"ddfStatesList\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"l\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"n\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) creates a list of all DDF states for a given level l, mode m and weight n. Returns a list of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\).";
+ddfStatesList::usage="ddfStatesList[l, m, n] creates a list of all DDF states for a given level l, mode m and weight n. Returns a list of ddfProd.";
 
 
 (* ::Input::Initialization:: *)
-sugawaraOp::usage="\!\(\*
-StyleBox[\"sugwaraOp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"linCombo_ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the action of the mode m Sugawara operator on a linear combination of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) (or a tachyon \!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)). The definition of the operator is derived in [2]. Returns a linear combination of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\).";
+sugawaraOp::usage="sugwaraOp[m][linCombo_ddfProd] computes the action of the mode m Sugawara operator on a linear combination of ddfProd (or a tachyon exp[...]). The definition of the operator is derived in [2]. Returns a linear combination of ddfProd.";
 
 
 (* ::Input::Initialization:: *)
-affineE::usage="\!\(\*
-StyleBox[\"affineE\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"linCombo_ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) or \!\(\*
-StyleBox[\"affineE\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the action of the mode m affine generator E on a linear combination of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) (or a tachyon \!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)) or a DDF tensor product \!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\). The definition of the operator is derived in [2]. For the action on a \!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\) two levels are expected as arguments corresponding to the two arguments of the \!\(\*
-StyleBox[\"ddfTP\",\nFontWeight->\"Bold\"]\). Returns a linear combination of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) or \!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\) depending on the input" ;
+affineE::usage="affineE[m][linCombo_ddfProd] or affineE[m][ddfTp[...]] computes the action of the mode m affine generator E on a linear combination of ddfProd (or a tachyon exp[...]) or a DDF tensor product ddfTp. The definition of the operator is derived in [2]. For the action on a ddfTp two levels are expected as arguments corresponding to the two arguments of the ddfTP. Returns a linear combination of ddfProd or ddfTp depending on the input" ;
 
 
 (* ::Input::Initialization:: *)
-affineF::usage="\!\(\*
-StyleBox[\"affineF\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"linCombo_ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) or \!\(\*
-StyleBox[\"affineF\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the action of the mode m affine generator F on a linear combination of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) (or a tachyon \!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)) or a DDF tensor product \!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\). The definition of the operator is derived in [2]. For the action on a \!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\) two levels are expected as arguments corresponding to the two arguments of the \!\(\*
-StyleBox[\"ddfTP\",\nFontWeight->\"Bold\"]\). Returns a linear combination of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) or \!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\) depending on the input" ;
+affineF::usage="affineF[m][linCombo_ddfProd] or affineF[m][ddfTp[...]] computes the action of the mode m affine generator F on a linear combination of ddfProd (or a tachyon exp[...]) or a DDF tensor product ddfTp. The definition of the operator is derived in [2]. For the action on a ddfTp two levels are expected as arguments corresponding to the two arguments of the ddfTP. Returns a linear combination of ddfProd or ddfTp depending on the input" ;
 
 
 (* ::Input::Initialization:: *)
-affineH::usage="\!\(\*
-StyleBox[\"affineH\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"linCombo_ddfProd\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) or \!\(\*
-StyleBox[\"affineH\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)computes the action of the mode m affine generator H on a linear combination of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) (or a tachyon \!\(\*
-StyleBox[\"exp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"...\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)) or a DDF tensor product \!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\). The affine generator is defined as \!\(\*SubscriptBox[\(H\), \(m\)]\) = \!\(\*SqrtBox[\(2\)]\)\!\(\*SuperscriptBox[\(\[InvisiblePrefixScriptBase]\), \([l]\)]\)\!\(\*SubscriptBox[\(A\), \(lm\)]\). For the action on a \!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\) two levels are expected as arguments corresponding to the two arguments of the \!\(\*
-StyleBox[\"ddfTP\",\nFontWeight->\"Bold\"]\). Returns a linear combination of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\) or \!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\) depending on the input" ;
+affineH::usage="affineH[m][linCombo_ddfProd] or affineH[m][ddfTp[...]] computes the action of the mode m affine generator H on a linear combination of ddfProd (or a tachyon exp[...]) or a DDF tensor product ddfTp. The affine generator is defined as \!\(\*SubscriptBox[\(H\), \(m\)]\) = \!\(\*SqrtBox[\(2\)]\)\!\(\*SuperscriptBox[\(\[InvisiblePrefixScriptBase]\), \([l]\)]\)\!\(\*SubscriptBox[\(A\), \(lm\)]\). For the action on a ddfTp two levels are expected as arguments corresponding to the two arguments of the ddfTP. Returns a linear combination of ddfProd or ddfTp depending on the input" ;
 
 
 (* ::Input::Initialization:: *)
-e::usage="\!\(\*
-StyleBox[\"e\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"i\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) is the Chevalley-Serre generator e_i with i \[Element] {-1,0,1}.";
+e::usage="e[i] is the Chevalley-Serre generator e_i with i \[Element] {-1,0,1}.";
 
 
 (* ::Input::Initialization:: *)
-f::usage="\!\(\*
-StyleBox[\"f\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"i\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) is the Chevalley-Serre generator f_i with i \[Element] {-1,0,1}.";
+f::usage="f[i] is the Chevalley-Serre generator f_i with i \[Element] {-1,0,1}.";
 
 
 (* ::Input::Initialization:: *)
-h::usage="\!\(\*
-StyleBox[\"h\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"i\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) is the Chevalley-Serre generator h_i with i \[Element] {-1,0,1}.";
+h::usage="h[i] is the Chevalley-Serre generator h_i with i \[Element] {-1,0,1}.";
 
 
 (* ::Input::Initialization:: *)
-multiCom::usage="\!\(\*
-StyleBox[\"multiCom\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"indices\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the multicommutator e_indices, where indices are from the set -1, 0, 1. Takes two or more arguments. Returns a \!\(\*
-StyleBox[\"tp\",\nFontWeight->\"Bold\"]\).";
+multiCom::usage="multiCom[indices] computes the multicommutator e_indices, where indices are from the set -1, 0, 1. Takes two or more arguments. Returns a tp.";
 
 
 (* ::Input::Initialization:: *)
-cosetVirasoroOpTp::usage="\!\(\*
-StyleBox[\"cosetVirasoroOpTp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"expr_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"expr_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the action of the coset Virasoro operator on the tensor product \!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"expr_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\" \",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"expr_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\), where the two expressions are linear combinations of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\). Returns a linear combination of \!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\). The tensor product of DDF states does form a representation of the coset Virasoro algebra.";
+cosetVirasoroOpTp::usage="cosetVirasoroOpTp[m][ddfTp[expr_1,expr_2]] computes the action of the coset Virasoro operator on the tensor product ddfTp[expr_1, expr_2], where the two expressions are linear combinations of ddfProd. Returns a linear combination of ddfTp. The tensor product of DDF states does form a representation of the coset Virasoro algebra.";
 
 
 (* ::Input::Initialization:: *)
-sugawaraOpTp::usage="\!\(\*
-StyleBox[\"sugawaraOpTp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"m\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"[\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"expr_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"1\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\",\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"expr_\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"2\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\)\!\(\*
-StyleBox[\"]\",\nFontWeight->\"Bold\"]\) computes the action of the Sugawara operator on the tensor product ddfTp[expr_1, expr_2], where the two expressions are linear combinations of \!\(\*
-StyleBox[\"ddfProd\",\nFontWeight->\"Bold\"]\). Returns a linear combination of \!\(\*
-StyleBox[\"ddfTp\",\nFontWeight->\"Bold\"]\).";
+sugawaraOpTp::usage="sugawaraOpTp[m][ddfTp[expr_1,expr_2]] computes the action of the Sugawara operator on the tensor product ddfTp[expr_1, expr_2], where the two expressions are linear combinations of ddfProd. Returns a linear combination of ddfTp.";
 
 
 (* ::Section:: *)
@@ -1399,11 +795,11 @@ ddfTpInvestigator[ddfTp[a_,b_]]:={ddfProdInvestigator[a],ddfProdInvestigator[b]}
 
 
 (* ::Text:: *)
-(*Define a function linerIndependenQ that checks if the list of ddfProd or tp is linearly independent.*)
+(*Define a function linerIndependenQ that checks if the list of ddfProd , ddfTp or tp is linearly independent.*)
 
 
 (* ::Input::Initialization:: *)
-rank[ls_]:=Block[{},coefficientList=DeleteCases[DeleteDuplicates[Flatten[Table[ReplaceAll[If[Head[elem]===Plus,Apply[List,elem],elem],{n_*ddfProd[expr__]->ddfProd[expr],n_*tp[expr__]->tp[expr],n_*exp[expr_]->exp[expr]}],{elem,ls}]]],0];MatrixRank[Table[Table[Coefficient[elem,coefficient],{coefficient,coefficientList}],{elem,ls}]]]
+rank[ls_]:=Block[{},coefficientList=DeleteCases[DeleteDuplicates[Flatten[Table[ReplaceAll[If[Head[elem]===Plus,Apply[List,elem],elem],{n_*ddfProd[expr__]->ddfProd[expr],n_*ddfTp[expr__]->ddfTp[expr],n_*tp[expr__]->tp[expr],n_*exp[expr_]->exp[expr]}],{elem,ls}]]],0];MatrixRank[Table[Table[Coefficient[elem,coefficient],{coefficient,coefficientList}],{elem,ls}]]]
 
 
 (* ::Input::Initialization:: *)
