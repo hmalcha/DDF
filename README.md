@@ -8,8 +8,13 @@ Additionally, the package provides several operators that act on DDF states.
 
 The functions defined in the DDF package are derived from the papers [1, 2] and adjusted to the Feingold-Frenkel algebra F.
 
-1. R.W. Gebert and H. Nicolai, On E(10) and the DDF construction, Commun. Math. Phys. 172 (1995), 571-622, [arXiv:hep-th/9406175](https://arxiv.org/abs/hep-th/9406175).
-2. R.W. Gebert and H. Nicolai, An Affine string vertex operator construction at arbitrary level, J. Math. Phys. 38 (1997), 4435-4450, [arXiv:hep-th/9608014](https://arxiv.org/abs/hep-th/9608014).
+1. R.W. Gebert and H. Nicolai, *"On E(10) and the DDF construction"*, Commun. Math. Phys. 172 (1995), 571-622, [arXiv:hep-th/9406175](https://arxiv.org/abs/hep-th/9406175).
+2. R.W. Gebert and H. Nicolai, *"An affine string vertex operator construction at arbitrary level"*, J. Math. Phys. 38 (1997), 4435-4450, [arXiv:hep-th/9608014](https://arxiv.org/abs/hep-th/9608014).
+
+
+The DDF package has been used to to obtain the result presented in
+
+3. S. Capolongo, A. Kleinschmidt, H. Malcha and H. Nicolai, *"A string-like realization of hyperbolic Kac-Moody algebras"*, [arXiv:2411.18754 [hep-th]](https://arxiv.org/abs/2411.18754).
 
 ## Getting Started
 
@@ -50,7 +55,7 @@ The *.wls* script then computes all DDF states of the given level and weight up 
 It is advised to comment out the parts of this script that compute the DDF states with mode sum 4 and higher before running it on your local machine. At the moment it takes about 60 hours (on a powerful server) to run the entire script for arbitrary values of LEVEL and WEIGHT.
 
 ## License
-Copyright © 2024 Hannes Malcha
+Copyright © 2025x Hannes Malcha
 
 The DDF Package is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 The DDF Package is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.

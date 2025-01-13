@@ -23,6 +23,14 @@
 
 
 (* ::Text:: *)
+(*The DDF package has been used to to obtain the result presented in*)
+
+
+(* ::Text:: *)
+(*[3] S . Capolongo, A . Kleinschmidt, H . Malcha and H . Nicolai, "A string-like realization of hyperbolic Kac-Moody algebras", arXiv : 2411.18754 [hep-th] .*)
+
+
+(* ::Text:: *)
 (*This file is part of the DDF Package for Mathematica.*)
 (*The DDF Package is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.*)
 (*The DDF Package is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.*)
@@ -30,7 +38,7 @@
 
 
 (* ::Text:: *)
-(*Copyright \[Copyright] 2024*)
+(*Copyright \[Copyright] 2025*)
 (*Hannes Malcha*)
 (*hannes.malcha@aei.mpg.de*)
 

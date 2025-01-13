@@ -1,5 +1,5 @@
 #!/usr/bin/env wolframscript
-(* ::Package::{2560,1316}::{{0,Automatic},{Automatic,0}}:: *)
+(* ::Package:: *)
 
 (* ::Title:: *)
 (*Compute DDF States*)
@@ -9,6 +9,19 @@
 (*This script computes DDF states and stores them in the folder ddf_states.*)
 (*The must be called from the command line with two arguments LEVEL and WEIGHT.*)
 (*The script then computes all DDF states for the given level and weight up to depth 7.*)
+
+
+(* ::Text:: *)
+(*This file is part of the DDF Package for Mathematica.*)
+(*The DDF Package is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.*)
+(*The DDF Package is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.*)
+(*You should have received a copy of the GNU General Public License along with the DDF Package. If not, see https://www.gnu.org/licenses/.*)
+
+
+(* ::Text:: *)
+(*Copyright \[Copyright] 2025*)
+(*Hannes Malcha*)
+(*hannes.malcha@aei.mpg.de*)
 
 
 (* ::Section:: *)
