@@ -12,7 +12,7 @@ The functions defined in the DDF package are derived from the papers [1, 2] and 
 2. R.W. Gebert and H. Nicolai, *"An affine string vertex operator construction at arbitrary level"*, J. Math. Phys. 38 (1997), 4435-4450, [arXiv:hep-th/9608014](https://arxiv.org/abs/hep-th/9608014).
 
 
-The DDF package has been used to to obtain the result presented in
+The DDF package has been used to to obtain the result presented in:
 
 3. S. Capolongo, A. Kleinschmidt, H. Malcha and H. Nicolai, *"A string-like realization of hyperbolic Kac-Moody algebras"*, [arXiv:2411.18754 [hep-th]](https://arxiv.org/abs/2411.18754).
 
