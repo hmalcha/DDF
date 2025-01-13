@@ -55,7 +55,7 @@ The *.wls* script then computes all DDF states of the given level and weight up 
 It is advised to comment out the parts of this script that compute the DDF states with mode sum 4 and higher before running it on your local machine. At the moment it takes about 60 hours (on a powerful server) to run the entire script for arbitrary values of LEVEL and WEIGHT.
 
 ## License
-Copyright © 2025x Hannes Malcha
+Copyright © 2025 Hannes Malcha
 
 The DDF Package is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 The DDF Package is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
