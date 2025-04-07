@@ -30,7 +30,7 @@ After cloning the repository open and run the Mathematica notebook **User_Guide.
 
 ## Usage
 
-For the DDF package consist of the package file ***ddf.wl*** and the two folders **ddf_states** and **schur_polynomials**. These folders contain many pre-computed DDF states and Schur polynomials. The package file and the folders must be placed in the same directory.
+The DDF package consists of the package file ***ddf.wl*** and the two folders **ddf_states** and **schur_polynomials**. These folders contain many pre-computed DDF states and Schur polynomials. The package file and the folders must be placed in the same directory.
 
 To load the package into a Mathematica notebook write:
 
