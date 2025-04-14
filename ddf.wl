@@ -630,6 +630,11 @@ ddfTp[a_*exp[b_],c_]:=a*ddfTp[exp[b],c]
 ddfTp[a_,b_*exp[c_]]:=b*ddfTp[a,exp[c]]
 
 
+(* ::Input::Initialization:: *)
+ddfTp[a_*ddfTp[b__],c_]:=a*ddfTp[ddfTp[b],c]
+ddfTp[a_,b_*ddfTp[c__]]:=b*ddfTp[a,ddfTp[c]]
+
+
 (* ::Text:: *)
 (*Deal with tachyonic states*)
 
