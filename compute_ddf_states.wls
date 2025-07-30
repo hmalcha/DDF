@@ -6,22 +6,23 @@
 
 
 (* ::Text:: *)
-(*This script computes DDF states and stores them in the folder ddf_states.*)
-(*The must be called from the command line with two arguments LEVEL and WEIGHT.*)
-(*The script then computes all DDF states for the given level and weight up to depth 7.*)
+(*This file is part of the DDF Mathematica Package.*)
 
 
 (* ::Text:: *)
-(*This file is part of the DDF Package for Mathematica.*)
+(*Copyright \[Copyright] 2025 Hannes Malcha*)
+
+
+(* ::Text:: *)
 (*The DDF Package is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.*)
 (*The DDF Package is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.*)
 (*You should have received a copy of the GNU General Public License along with the DDF Package. If not, see https://www.gnu.org/licenses/.*)
 
 
 (* ::Text:: *)
-(*Copyright \[Copyright] 2025*)
-(*Hannes Malcha*)
-(*hannes.malcha@aei.mpg.de*)
+(*This script computes DDF states and stores them in the folder ddf_states.*)
+(*The must be called from the command line with two arguments LEVEL and WEIGHT.*)
+(*The script then computes all DDF states for the given level and weight up to depth 7.*)
 
 
 (* ::Section:: *)
@@ -69,7 +70,7 @@ fileNames[1]:={StringJoin["l",ToString[level],"m1",If[n>=0,StringJoin["n",ToStri
 
 
 (* ::Input::Initialization:: *)
-For[i=1,i<=Length[fileNames[1]],i++,Export[FileNameJoin[{"ddf_states",StringJoin["level_",ToString[level]],"mode_1",fileNames[1][[i]]}],states[1][[i]]]]
+For[i=1,i<=Length[fileNames[1]],i++,Export[FileNameJoin[{"src","ddf_states",StringJoin["level_",ToString[level]],"mode_1",fileNames[1][[i]]}],states[1][[i]]]]
 
 
 (* ::Input::Initialization:: *)
@@ -89,7 +90,7 @@ fileNames[2]:={StringJoin["l",ToString[level],"m2",If[n>=0,StringJoin["n",ToStri
 
 
 (* ::Input::Initialization:: *)
-For[i=1,i<=Length[fileNames[2]],i++,Export[FileNameJoin[{"ddf_states",StringJoin["level_",ToString[level]],"mode_2",fileNames[2][[i]]}],states[2][[i]]]]
+For[i=1,i<=Length[fileNames[2]],i++,Export[FileNameJoin[{"src","ddf_states",StringJoin["level_",ToString[level]],"mode_2",fileNames[2][[i]]}],states[2][[i]]]]
 
 
 (* ::Input::Initialization:: *)
@@ -109,7 +110,7 @@ fileNames[3]:={StringJoin["l",ToString[level],"m3",If[n>=0,StringJoin["n",ToStri
 
 
 (* ::Input::Initialization:: *)
-For[i=1,i<=Length[fileNames[3]],i++,Export[FileNameJoin[{"ddf_states",StringJoin["level_",ToString[level]],"mode_3",fileNames[3][[i]]}],states[3][[i]]]]
+For[i=1,i<=Length[fileNames[3]],i++,Export[FileNameJoin[{"src","ddf_states",StringJoin["level_",ToString[level]],"mode_3",fileNames[3][[i]]}],states[3][[i]]]]
 
 
 (* ::Input::Initialization:: *)
@@ -129,7 +130,7 @@ fileNames[4]:={StringJoin["l",ToString[level],"m4",If[n>=0,StringJoin["n",ToStri
 
 
 (* ::Input::Initialization:: *)
-For[i=1,i<=Length[fileNames[4]],i++,Export[FileNameJoin[{"ddf_states",StringJoin["level_",ToString[level]],"mode_4",fileNames[4][[i]]}],states[4][[i]]]]
+For[i=1,i<=Length[fileNames[4]],i++,Export[FileNameJoin[{"src","ddf_states",StringJoin["level_",ToString[level]],"mode_4",fileNames[4][[i]]}],states[4][[i]]]]
 
 
 (* ::Input::Initialization:: *)
@@ -149,7 +150,7 @@ fileNames[5]:={StringJoin["l",ToString[level],"m5",If[n>=0,StringJoin["n",ToStri
 
 
 (* ::Input::Initialization:: *)
-For[i=1,i<=Length[fileNames[5]],i++,Export[FileNameJoin[{"ddf_states",StringJoin["level_",ToString[level]],"mode_5",fileNames[5][[i]]}],states[5][[i]]]]
+For[i=1,i<=Length[fileNames[5]],i++,Export[FileNameJoin[{"src","ddf_states",StringJoin["level_",ToString[level]],"mode_5",fileNames[5][[i]]}],states[5][[i]]]]
 
 
 (* ::Input::Initialization:: *)
@@ -169,7 +170,7 @@ fileNames[6]:={StringJoin["l",ToString[level],"m6",If[n>=0,StringJoin["n",ToStri
 
 
 (* ::Input::Initialization:: *)
-For[i=1,i<=Length[fileNames[6]],i++,Export[FileNameJoin[{"ddf_states",StringJoin["level_",ToString[level]],"mode_6",fileNames[6][[i]]}],states[6][[i]]]]
+For[i=1,i<=Length[fileNames[6]],i++,Export[FileNameJoin[{"src","ddf_states",StringJoin["level_",ToString[level]],"mode_6",fileNames[6][[i]]}],states[6][[i]]]]
 
 
 (* ::Input::Initialization:: *)
@@ -189,7 +190,7 @@ fileNames[7]:={StringJoin["l",ToString[level],"m7",If[n>=0,StringJoin["n",ToStri
 
 
 (* ::Input::Initialization:: *)
-For[i=1,i<=Length[fileNames[7]],i++,Export[FileNameJoin[{"ddf_states",StringJoin["level_",ToString[level]],"mode_7",fileNames[7][[i]]}],states[7][[i]]]]
+For[i=1,i<=Length[fileNames[7]],i++,Export[FileNameJoin[{"src","ddf_states",StringJoin["level_",ToString[level]],"mode_7",fileNames[7][[i]]}],states[7][[i]]]]
 
 
 (* ::Input::Initialization:: *)
