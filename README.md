@@ -20,6 +20,13 @@ at arbitrary level"*, J. Math. Phys. 38 (1997), 4435-4450,
 *"A string-like realization of hyperbolic Kac-Moody algebras"*, 
 [arXiv:2411.18754 [hep-th]](https://arxiv.org/abs/2411.18754).
 
+The DDF package has been used to compute the results presented in:
+
+4. A. Kleinschmidt, H. Malcha and H. Nicolai, 
+*"From Tensor Algebras to Hyperbolic Kac-Moody Algebras"*, 
+[arXiv:2508.03815 [hep-th]](https://arxiv.org/abs/2508.03815).
+
+
 ## Getting Started
 
 To get started clone this repository to your local machine.
